@@ -32,7 +32,7 @@ const RegisterComplete = ({ history }) => {
       );
       //   console.log("RESULT", result);
       if (result.user.emailVerified) {
-        // remove user email fom local storage
+        // remove user email from local storage
         window.localStorage.removeItem("emailForRegistration");
         // get user id token
         let user = auth.currentUser;
