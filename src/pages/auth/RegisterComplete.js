@@ -51,7 +51,12 @@ const RegisterComplete = ({ history }) => {
 
   const completeRegistrationForm = () => (
     <form onSubmit={handleSubmit}>
-      <input type="email" className="form-control" value={email} disabled />
+      <input 
+        type="email" 
+        className="form-control" 
+        value={email} 
+        disabled 
+      />
 
       <input
         type="password"
@@ -61,7 +66,9 @@ const RegisterComplete = ({ history }) => {
         placeholder="Password"
         autoFocus
       />
+
       <br />
+
       <button type="submit" className="btn btn-raised">
         Complete Registration
       </button>
